@@ -1,0 +1,28 @@
+# Take input from the user (input is always treated as a string)
+num = input("Enter a string: ")
+
+# Outer loop: pick one character at a time from the string
+for i in num:
+    
+    # Initialize count for the current character
+    count = 0
+
+    # Inner loop: compare the selected character with every character in the string
+    for j in num:
+        
+        # If both characters are same, increase the count
+        if i == j:
+            count += 1
+
+    # After counting, check if the character appears only once
+    if count == 1:
+        # Print the first non-repeating character
+        print("First non-repeating character:", i)
+        
+        # Stop the loop because we need only the first one
+        break
+
+# This else block runs only if the loop completes without break
+else:
+    # Means all characters are repeating
+    print("No non-repeating character found")
