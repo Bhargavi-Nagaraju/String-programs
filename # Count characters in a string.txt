@@ -1,0 +1,14 @@
+# Count characters in a string
+
+string = input("Enter a string: ")   # Take input from the user
+count = 0                            # Initialize counter to 0
+
+# Loop through each character in the string
+for i in string:
+    count = count + 1                # Increase count for each character
+
+print("Character count:", count)     # Print total number of characters
+
+#sample output
+#Enter a string: Hello
+#character count:5

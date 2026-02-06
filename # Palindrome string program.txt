@@ -1,0 +1,18 @@
+# Palindrome string program
+
+string = input("Enter a string: ")     # Take input from the user
+palindrome = ""                        # Empty string to store reversed value
+
+# Loop from last character to first character
+for i in range(len(string)-1, -1, -1):
+    palindrome = palindrome + string[i]   # Add each character to palindrome
+
+# Compare original string with reversed string
+if string == palindrome:
+    print("palindrome")                # If same, it is a palindrome
+else:
+    print("not palindrome")             # If different, not a palindrome
+
+#sample output
+#Enter a string: madam
+#palindrome

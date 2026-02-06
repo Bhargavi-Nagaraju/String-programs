@@ -1,0 +1,14 @@
+# Reverse a string
+
+string = input("Enter a string: ")   # Take input from the user
+rev = ""                             # Empty string to store the result
+
+# Loop from last character to first character
+for i in range(len(string)-1, -1, -1):
+    rev = rev + string[i]            # Add each character to rev
+
+print("Reverse a string:", rev)      # Print the reversed string
+
+#sample output
+#Enter a string: Hello
+#olleH

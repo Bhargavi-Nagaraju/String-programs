@@ -1,0 +1,21 @@
+# Convert a string to UPPERCASE without using built-in methods
+
+string = input("Enter a string: ")     # Take input from the user
+result = ""                            # Empty string to store the result
+
+# Loop through each character in the input string
+for ch in string:
+    # Check if the character is a lowercase alphabet
+    if ch >= 'a' and ch <= 'z':
+        # Convert lowercase to uppercase using ASCII difference (32)
+        result = result + chr(ord(ch) - 32)
+    else:
+        # If character is already uppercase, digit, or symbol, keep it as is
+        result = result + ch
+
+# Print the final uppercase string
+print("Upper case:", result)
+
+#sample output
+#Enter a string: bhargavi
+#uppercase:Bhargavi
