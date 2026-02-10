@@ -1,0 +1,21 @@
+# Take input string from the user
+text = input("Enter a string:")
+
+# This variable will store the result without duplicates
+duplicate = ""
+
+# Loop through each character in the string
+for char in text:
+    
+    # Check if the character is not already in 'duplicate'
+    if char not in duplicate:
+        
+        # Add the character to 'duplicate'
+        duplicate += char
+
+# Print the final string without duplicate characters
+print("String after removing duplicates:", duplicate)
+
+# sample output
+# Enter a string: hello
+# helo

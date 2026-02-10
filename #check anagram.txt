@@ -1,0 +1,31 @@
+# Take input from the user
+str1 = input("Enter first string: ")
+str2 = input("Enter second string: ")
+
+# Remove spaces and convert to lowercase
+# This makes the comparison fair
+str1 = str1.replace(" ", "").lower()
+str2 = str2.replace(" ", "").lower()
+
+# If lengths are different, they cannot be anagrams
+if len(str1) != len(str2):
+    print("Strings are not anagrams")
+else:
+    # Assume they are anagrams initially
+    result = True
+
+    # Check each character count in both strings
+    for char in str1:
+        if str1.count(char) != str2.count(char):
+            result = False   # Not an anagram
+            break            # Stop checking further
+
+    # Print the final result
+    if result:
+        print("Strings are anagrams")
+    else:
+        print("Strings are not anagrams")
+#sample output
+#Enter first string:listen
+#Enter second string: silent
+strings are anagrams

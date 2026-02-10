@@ -1,0 +1,30 @@
+# Take input string from the user
+text = input("Enter a string: ")
+
+# This variable will store characters that are already counted
+checked = ""
+
+# Loop through each character in the string
+for char in text:
+    
+    # Check if the character is not already counted
+    if char not in checked:
+        
+        # Count how many times the character appears in the string
+        count = text.count(char)
+        
+        # Print the character and its frequency
+        print(char, ":", count)
+        
+        # Add the character to 'checked' so it won’t be counted again
+        checked += char
+
+# sample output:
+# Enter a string:hello
+# h : 1
+# e : 1
+# l : 2
+# o : 1
+
+
+
