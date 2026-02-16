@@ -1,0 +1,25 @@
+# Capitalize first letter of each word
+
+# Takes the full sentence from the user and stores it in text
+text = input("Enter a sentence: ")
+
+# Split the sentence into a list of words
+words = text.split()
+
+# Empty list to store the capitalized words
+capitalized_words = []
+
+# Loop through each word in words one by one
+for word in words:
+    # Capitalize the first letter of the word
+    capitalized_words.append(word.capitalize())
+
+# Join the capitalized words back into a sentence
+result = " ".join(capitalized_words)
+
+# Print the result
+print(result)
+
+#sample output
+#Enter a sentence:hello world
+#Hello World

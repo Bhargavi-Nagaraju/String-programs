@@ -1,0 +1,26 @@
+# Program to reverse the words in a sentence
+
+# Take input sentence from the user
+text = input("Enter a sentence: ")
+
+# Split the sentence into a list of words
+words = text.split()
+
+# Create an empty list to store reversed words
+reversed_words = []
+
+# Loop through each word in the list
+for word in words:
+    # Insert each word at the beginning of the list
+    # This shifts existing words to the right and reverses the word order
+    reversed_words.insert(0, word)
+
+# Join the reversed words into a single string with spaces
+result = " ".join(reversed_words)
+
+# Print the final reversed sentence
+print(result)
+
+# Sample Output:
+# Enter a sentence: i love python
+# python love i
